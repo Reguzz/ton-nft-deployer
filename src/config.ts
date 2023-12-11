@@ -22,7 +22,7 @@ export async function getConfig(): Promise<Config> {
     topupAmount: process.env.TOPUP_AMOUNT || '1',
   }
 
-  // await checkConfig(c)
+  await checkConfig(c)
 
   return c
 }
